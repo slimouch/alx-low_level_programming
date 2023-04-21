@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- * main - a program will assign a random number to the variable n
- * each time it is executed headers goes there
+/**
+ * main - A program will assign a random number to the variable n
+ * and print the last digit of n
  *
  * Return: 0 (Success)
- **/
+ */
 int main(void)
 {
         int n;
