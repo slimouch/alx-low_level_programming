@@ -11,7 +11,7 @@ int i = 26;
 while (i >= 0)
 {
 putchar(alpha[i]);
-i--
+i--;
 }
 putchar('\n');
 return (0);
