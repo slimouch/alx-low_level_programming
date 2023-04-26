@@ -12,14 +12,14 @@ long m = 1, k = 2;
 while (n < 50)
 {
 if (n == 0)
-printf("%d", m);
+printf("%ld", m);
 else if (n == 1)
-printf(", %d", k);
+printf(", %ld", k);
 else
 {
 k += m;
 m = k - m;
-printf(", %d", k);
+printf(", %ld", k);
 }
 ++n;
 }
