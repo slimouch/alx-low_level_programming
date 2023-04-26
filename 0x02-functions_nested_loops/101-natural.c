@@ -13,7 +13,7 @@ if ((i % 3 == 0) || (i % 5 == 0))
 j += i;
 }
 i++;
-} while (i < 1024)
+} while (i < 1024);
 printf("%d\n", j);
 return (0);
 }
