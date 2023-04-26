@@ -17,7 +17,6 @@ for (m = 1; m <= i; m++)
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar(' ');
 p = n * m;
 if (p <= 9)
 _putchar(' ');
@@ -36,4 +35,3 @@ _putchar('\n');
 }
 }
 }
-
