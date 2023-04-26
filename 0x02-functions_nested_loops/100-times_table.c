@@ -15,10 +15,10 @@ _putchar('0');
 for (m = 1; m <= i; m++)
 {
 _putchar(',');
-_putchar(' ');
+_putchar('  ');
 p = n * m;
 if (p <= 9)
-_putchar(' ');
+_putchar('  ');
 if (p >= 100)
 {
 _putchar((p / 100) + '0');
