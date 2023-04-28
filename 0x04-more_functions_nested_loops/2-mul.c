@@ -2,10 +2,9 @@
 /**
  * mul - multiply 2 int
  * @a: first int
- * @c: second int
+ * @b: second int
  * Return: addition of multiplication
  */
-
 int mul(int a, int b)
 {
 return (a * b);
