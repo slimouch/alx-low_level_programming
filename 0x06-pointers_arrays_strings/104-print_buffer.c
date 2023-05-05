@@ -14,7 +14,7 @@ if (size <= 0)
 while (c < size)
 {
 	d = size - c < 10 ? size - c : 10;
-	printf("%08x", c);
+	printf("%08x: ", c);
 	for (a = 0; a < 10; a++)
 	{
 		if (a < d)
