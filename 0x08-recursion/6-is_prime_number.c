@@ -1,5 +1,4 @@
 #include "main.h"
-
 int verify_p(int n, int v);
 
 /**
@@ -13,7 +12,6 @@ int verify_p(int n, int v);
 */
 
 int is_prime_number(int n)
-
 {
 
 return (verify_p(n, 1));
