@@ -2,6 +2,7 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number.
  * @n: integer
+ * @v: integer
  * Return: the natural square root of a number.
  */
 int sqr(int n, int v);
@@ -20,9 +21,9 @@ int sqr(int n, int v)
 	int sq = v * v;
 
 	if (sq == n)
-                return (v);
+		return (v);
 	else if (sq < n)
-		return (sqr(n , v + 1));
+		return (sqr(n, v + 1));
 	else
 		return (-1);
 }
