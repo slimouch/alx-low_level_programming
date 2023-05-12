@@ -26,12 +26,12 @@ int main(int argc, char const *argv[])
 			}
 		}
 	}
-        printf("%d\n", lcent);
+	printf("%d\n", lcent);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-        return (0);
+	return (0);
 }
