@@ -21,7 +21,7 @@ int isDigit(char *str)
 }
 /**
  * strl - the length if a string
- * @s: string
+ * @str: string
  * Return: the len of s
  */
 int strl(char *str)
