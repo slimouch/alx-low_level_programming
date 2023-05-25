@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	char *s = (char *)main;
 	int t;
-	
+
 	if (argc != 2)
 		printf("Error\n"), exit(1);
 	t = atoi(argv[1]);
