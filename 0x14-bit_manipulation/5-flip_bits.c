@@ -16,6 +16,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (a >= 0)
 	{
 		number = Xnumber >> a;
+		a--;
 		if (number & 1)
 			cmp++;
 	}
