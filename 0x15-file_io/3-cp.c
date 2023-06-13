@@ -52,8 +52,7 @@ buf = CreatBuff(argv[2]);
 De = open(argv[1], O_RDONLY);
 R = read(De, buf, 1024);
 A = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-do
-{
+do {
 if (De == -1 || R == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
