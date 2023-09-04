@@ -7,7 +7,7 @@
  * 0 if the file cannot be opened or read, or the filename is NULL,
  * or write fails or does not write the expected amount of bytes.
  */
-ssize_t read_textfile(conat char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *bff;
 	ssize_t w, r, f;
@@ -19,7 +19,7 @@ ssize_t read_textfile(conat char *filename, size_t letters)
 		return (0);
 	f = open(filename, O_RDONLY);
 	r = read(f, bff, letters);
-	w = wrire(STDOUT_FILENO, bff, r);
+	w = write(STDOUT_FILENO, bff, r);
 	if (f == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(bff);
