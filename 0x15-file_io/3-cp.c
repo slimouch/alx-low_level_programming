@@ -28,7 +28,7 @@ void CloseF(int desc)
 	f = close(desc);
 	if (f == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", desc);
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", desc);
 		exit(100);
 	}
 }
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	bff = CreatBuff(argv[2]);
@@ -55,16 +55,18 @@ int main(int argc, char *argv[])
 	do {
 		if (dsc == -1 || r == -1)
 		{
-		dprintf(STDERR_FILENO, "Error: Can' read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file
+				NAME_OF_THE_FILE %s\n", argv[1]);
 		free(bff);
 		exit(98);
 		}
 		w = write(a, bff, r);
 		if (a == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			free(bff);
-			exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to
+				NAME_OF_THE_FILE %s\n", argv[2]);
+		free(bff);
+		exit(99);
 		}
 		r = read(dsc, bff, 1024);
 		a = open(argv[2], O_WRONLY | O_APPEND);
