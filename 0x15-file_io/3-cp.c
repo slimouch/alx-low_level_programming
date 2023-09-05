@@ -29,7 +29,7 @@ void CloseF(int desc)
 	if (f == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", desc);
-		exir(100);
+		exit(100);
 	}
 }
 /**
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage cp file_from file_to\n");
-		exit(97)
+		exit(97);
 	}
 	bff = CreatBuff(argv[2]);
 	dsc = open(argv[1], O_RDONLY);
