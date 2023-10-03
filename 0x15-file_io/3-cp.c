@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 	bf = CreatBuff(argv[2]);
 	DE = open(argv[1], O_RDONLY);
 	RD = read(DE, bf, 1024);
-	A = open(argv[2]), O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	A = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	do {
 		if (DE == -1  || RD == -1)
 		{
