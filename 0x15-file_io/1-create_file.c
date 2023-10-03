@@ -17,7 +17,7 @@ int create_file(const char *filename, char *text_content)
 			L++;
 	}
 	OP = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	WR = write(OP, text_content, 1);
+	WR = write(OP, text_content, L);
 	if (OP == -1 || WR == -1)
 		return (-1);
 	close(OP);
